@@ -21,10 +21,10 @@
                                     v-for="skill of skills"
                                     :key="skill.name"
                                 >
-                                    <v-layout justify-start column wrap>
+                                    <v-layout justify-start column>
                                         <v-flex text-xs-left>
                                             <img :src="skill.logourl" height="18" width="18"/>
-                                            <span class="text-xl-left blue-grey--text">{{skill.name}}</span>
+                                            <span class="blue-grey--text">{{skill.name}}</span>
                                         </v-flex>
                                         <v-flex>
                                             <v-progress-linear
