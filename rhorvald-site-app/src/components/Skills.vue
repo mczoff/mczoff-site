@@ -54,25 +54,25 @@
             skills: [
                 {
                     name: 'C#',
-                    color: 'blue',
+                    color: 'blue-grey',
                     value: 10,
                     logourl: require('../assets/logo.png')
                 },
                 {
                     name: 'C++',
-                    color: 'indigo',
+                    color: 'blue-grey',
                     value: 10,
                     logourl: require('../assets/logo.png')
                 },
                 {
                     name: 'ADO .NET',
-                    color: 'grey',
+                    color: 'blue-grey',
                     value: 10,
                     logourl: require('../assets/logo.png')
                 },
                 {
                     name: 'ASP .NET CORE',
-                    color: 'green',
+                    color: 'blue-grey',
                     value: 50,
                     logourl: require('../assets/logo.png')
                 }

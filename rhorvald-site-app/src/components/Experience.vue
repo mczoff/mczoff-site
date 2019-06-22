@@ -1,5 +1,5 @@
 <template>
-    <v-container fluid ma-0 pa-0 id="skills">
+    <v-container fluid ma-0 pa-0 id="experience">
         <v-layout
                 text-xs-center
                 wrap
@@ -16,24 +16,49 @@
                     <v-card-actions>
                         <v-container fluid>
                             <v-layout justify-space-around>
-                                <v-flex xs8>
+                                <v-flex hidden-sm-and-down xs8>
                                     <v-timeline>
                                         <v-timeline-item
-                                            v-for="(year, i) in years"
+                                                v-for="(experience, i) in experienceList"
+                                                :key="i"
+                                                :color="experience.color"
+                                                small
+                                        >
+                                            <template v-slot:opposite>
+                                            <span
+                                                    :class="`headline font-weight-bold ${experience.color}--text`"
+                                                    v-text="experience.year"
+                                            ></span>
+                                            </template>
+                                            <div class="py-0">
+                                                <h2 :class="`headline font-weight-light mb-3 ${experience.color}--text`">{{experience.title}}</h2>
+                                                <div>
+                                                    {{experience.content}}
+                                                </div>
+                                            </div>
+                                        </v-timeline-item>
+                                    </v-timeline>
+                                </v-flex>
+
+                                <v-flex hidden-md-and-up xs10>
+                                    <v-timeline dense>
+                                        <v-timeline-item
+                                            v-for="(experience, i) in experienceList"
                                             :key="i"
-                                            :color="year.color"
+                                            :color="experience.color"
                                             small
                                         >
                                             <template v-slot:opposite>
                                             <span
-                                                :class="`headline font-weight-bold ${year.color}--text`"
-                                                v-text="year.year"
+                                                    :class="`headline font-weight-bold ${experience.color}--text`"
+                                                    v-text="experience.year"
                                             ></span>
                                             </template>
-                                            <div class="py-0">
-                                                <h2 :class="`headline font-weight-light mb-3 ${year.color}--text`">Lorem ipsum</h2>
+                                            <div class="text-xs-left py-0">
+                                                <h2 :class="`headline font-weight-light mb-3 ${experience.color}--text`">{{experience.title}}</h2>
+                                                <h4>{{experience.year}}</h4>
                                                 <div>
-                                                    Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.
+                                                    {{experience.content}}
                                                 </div>
                                             </div>
                                         </v-timeline-item>
@@ -53,26 +78,18 @@
     export default {
         name: "Experience",
         data: () => ({
-            years: [
+            experienceList: [
                 {
-                    color: 'cyan',
-                    year: '1960'
+                    title: 'Middle in development team',
+                    content: 'Donetsk specialized school with separate in-depth study of individual subjects №37',
+                    color: 'blue-grey',
+                    year: '2016 - 2005'
                 },
                 {
-                    color: 'green',
-                    year: '1970'
-                },
-                {
-                    color: 'pink',
-                    year: '1980'
-                },
-                {
-                    color: 'amber',
-                    year: '1990'
-                },
-                {
-                    color: 'orange',
-                    year: '2000'
+                    title: 'Junior in development team',
+                    content: 'Flexible pawn shop system',
+                    color: 'blue-grey',
+                    year: '2017 - 2016'
                 }
             ]
         })

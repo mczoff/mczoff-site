@@ -16,11 +16,11 @@
                     <v-card-actions>
                         <v-container fluid>
                             <v-layout justify-space-around>
-                                <v-flex xs5>
+                                <v-flex xs6 md5>
                                     <v-layout column>
                                         <v-flex
-                                                v-for="language of languages"
-                                                :key="language.name"
+                                            v-for="language of languages"
+                                            :key="language.name"
                                         >
                                             <v-layout column>
                                                 <v-flex text-xs-left>
@@ -28,11 +28,11 @@
                                                 </v-flex>
                                                 <v-flex>
                                                     <v-progress-linear
-                                                            class="mt-1 mb-2"
-                                                            rounded
-                                                            color="blue"
-                                                            height="8"
-                                                            :value="language.value"
+                                                        class="mt-1 mb-4"
+                                                        rounded
+                                                        color="blue-grey"
+                                                        height="8"
+                                                        :value="language.value"
                                                     ></v-progress-linear>
                                                 </v-flex>
                                             </v-layout>
@@ -56,15 +56,15 @@
             languages: [
                 {
                     name: 'Russian',
-                    value: 10
+                    value: 80
                 },
                 {
                     name: 'Ukranian',
-                    value: 92
+                    value: 70
                 },
                 {
                     name: 'English',
-                    value: 16
+                    value: 30
                 },
             ]
         }),

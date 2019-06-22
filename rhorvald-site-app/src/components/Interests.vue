@@ -15,12 +15,13 @@
                     <v-divider></v-divider>
                     <v-card-actions>
                         <v-container fluid>
-                            <v-layout row>
-                                <v-flex xs12>
-                                    <v-layout wrap row>
+                            <v-layout justify-space-around  row>
+                                <v-flex xs12 md10>
+                                    <v-layout justify-space-around wrap row>
                                         <v-flex
-                                                pa-5
-                                                xs4
+                                                mt-5
+                                                mb-5
+                                                xs4 md2
                                                 v-for="interest of interests"
                                                 :key="interest.name">
                                             <v-layout column>
@@ -50,29 +51,29 @@
         data: () => ({
             interests: [
                 {
-                    name: 'Women',
-                    icon: 'help'
+                    name: 'Science',
+                    icon: 'school'
                 },
                 {
-                    name: 'Men',
-                    icon: 'help'
+                    name: 'Programming',
+                    icon: 'code'
                 },
                 {
-                    name: 'Peoples',
-                    icon: 'help'
+                    name: 'Sport',
+                    icon: 'motorcycle'
                 },
                 {
-                    name: 'Women',
-                    icon: 'help'
+                    name: 'Music',
+                    icon: 'library_music'
                 },
                 {
-                    name: 'Men',
-                    icon: 'help'
+                    name: 'Video games',
+                    icon: 'videogame_asset'
                 },
                 {
-                    name: 'Peoples',
-                    icon: 'help'
-                }
+                    name: 'Communication',
+                    icon: 'chat'
+                },
             ]
         })
     }
