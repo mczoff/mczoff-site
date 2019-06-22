@@ -21,10 +21,10 @@
                                     v-for="skill of skills"
                                     :key="skill.name"
                                 >
-                                    <v-layout justify-start column wrap>
+                                    <v-layout justify-start column>
                                         <v-flex text-xs-left>
                                             <img :src="skill.logourl" height="18" width="18"/>
-                                            <span class="text-xl-left blue-grey--text">{{skill.name}}</span>
+                                            <span class="blue-grey--text">{{skill.name}}</span>
                                         </v-flex>
                                         <v-flex>
                                             <v-progress-linear
@@ -54,25 +54,25 @@
             skills: [
                 {
                     name: 'C#',
-                    color: 'blue',
+                    color: 'blue-grey',
                     value: 10,
                     logourl: require('../assets/logo.png')
                 },
                 {
                     name: 'C++',
-                    color: 'indigo',
+                    color: 'blue-grey',
                     value: 10,
                     logourl: require('../assets/logo.png')
                 },
                 {
                     name: 'ADO .NET',
-                    color: 'grey',
+                    color: 'blue-grey',
                     value: 10,
                     logourl: require('../assets/logo.png')
                 },
                 {
                     name: 'ASP .NET CORE',
-                    color: 'green',
+                    color: 'blue-grey',
                     value: 50,
                     logourl: require('../assets/logo.png')
                 }

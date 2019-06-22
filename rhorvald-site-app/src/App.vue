@@ -10,6 +10,7 @@
       <v-list class="pa-0">
         <v-divider></v-divider>
         <v-list-tile
+          active-class
           v-for="link of headerLinks"
           :key="link.title"
           :to="link.url"
@@ -35,6 +36,7 @@
           :key="link.title"
           :to="link.url"
           flat
+          active-class
         >
           <span class="mr-2">{{link.title}}</span>
         </v-btn>
@@ -47,6 +49,25 @@
     <v-content>
       <Home/>
     </v-content>
+    <v-footer
+            height="auto"
+            color="blue-grey darken-4"
+    >
+      <v-layout
+          justify-center
+          row
+          wrap
+      >
+        <v-flex
+            py-3
+            text-xs-center
+            white--text
+            xs12
+        >
+          &copy; 2019 — <strong>Robert Horvald</strong>
+        </v-flex>
+      </v-layout>
+    </v-footer>
   </v-app>
 </template>
 
