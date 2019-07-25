@@ -25,9 +25,11 @@
       </v-list>
     </v-navigation-drawer>
     <v-toolbar app>
-      <v-toolbar-title class="headline text-uppercase">
-        <span>R. </span>
-        <span class="font-weight-light">Horvald</span>
+      <v-toolbar-title class="subtitle-1">
+        <v-layout align-center>
+          <img src="./assets/logo-stroke.png" height="75" width="75"/>
+          <span class="font-weight-light">mczoff</span>
+        </v-layout>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
@@ -82,7 +84,7 @@ export default {
   data:  () => ({
     drawer: false,
     headerLinks: [
-      { title: 'Skills', url: '/#skills' },
+      { title: 'Repositories', url: '/#repositories' },
       { title: 'Experience', url: '/#experience' },
       { title: 'Research', url: '/#research' },
       { title: 'Languages', url: '/#languages' },

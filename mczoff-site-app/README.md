@@ -1,4 +1,4 @@
-# rhorvald-site-app
+# mczoff-site-app
 
 ## Project setup
 ```
