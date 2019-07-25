@@ -81,7 +81,7 @@
             experienceList: [
                 {
                     title: 'Middle in development team',
-                    content: 'Donetsk specialized school with separate in-depth study of individual subjects №37',
+                    content: 'Automotive CCTV systems',
                     color: 'blue-grey',
                     year: '2016 - 2005'
                 },
