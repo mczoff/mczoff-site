@@ -80,16 +80,16 @@
         data: () => ({
             experienceList: [
                 {
-                    title: 'Middle in development team',
+                    title: 'Junior in development team',
                     content: 'Automotive CCTV systems',
                     color: 'blue-grey',
-                    year: '2016 - 2005'
+                    year: '2017 - 2019'
                 },
                 {
                     title: 'Junior in development team',
                     content: 'Flexible pawn shop system',
                     color: 'blue-grey',
-                    year: '2017 - 2016'
+                    year: '2016 - 2017'
                 }
             ]
         })

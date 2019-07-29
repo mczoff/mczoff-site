@@ -36,7 +36,7 @@
                                             <v-icon blue-grey--text>
                                                 mail
                                             </v-icon>
-                                            <span class="title font-weight-regular blue-grey--text"> rhorvald@gmail.com</span>
+                                            <span class="title font-weight-regular blue-grey--text"> mczoff@mail.ru</span>
                                         </v-flex>
                                     </v-layout>
                                 </v-flex>
@@ -57,29 +57,14 @@
             contacts: [
                 {
                     name: 'github',
-                    url: 'https://github.com/',
+                    url: 'https://github.com/mczoff',
                     icon: 'mdi-github-box'
                 },
                 {
                     name: 'telegram',
-                    url: 'https://telegram.org/',
+                    url: 'https://t.me/mczoff',
                     icon: 'mdi-telegram'
-                },
-                {
-                    name: 'linkedin',
-                    url: 'https://www.linkedin.com/',
-                    icon: 'mdi-linkedin'
-                },
-                {
-                    name: 'vk.com',
-                    url: 'https://vk.com/',
-                    icon: 'mdi-vk'
-                },
-                {
-                    name: 'instagram.com',
-                    url: 'https://www.instagram.com/',
-                    icon: 'mdi-instagram'
-                },
+                }
             ]
         }),
     }
