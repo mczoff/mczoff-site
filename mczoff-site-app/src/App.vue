@@ -66,7 +66,7 @@
             white--text
             xs12
         >
-          &copy; 2019 — <strong>Robert Horvald</strong>
+          &copy; 2019 — <strong>Bogdan Alyabyev</strong>
         </v-flex>
       </v-layout>
     </v-footer>
@@ -84,7 +84,7 @@ export default {
   data:  () => ({
     drawer: false,
     headerLinks: [
-      { title: 'Repositories', url: '/#repositories' },
+      { title: 'Projects', url: '/#projects' },
       { title: 'Experience', url: '/#experience' },
       { title: 'Research', url: '/#research' },
       { title: 'Languages', url: '/#languages' },

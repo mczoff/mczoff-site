@@ -13,7 +13,7 @@
                             justify-center
                     >
                         <img src="../assets/logo-stroke.png" height="200" width="200"/>
-                        <h1 class="display-2 font-weight-thin mt-3">Bogdan Aliabev</h1>
+                        <h1 class="display-2 font-weight-thin mt-3">Bogdan Alyabyev</h1>
                         <h4 class="subheading mt-1 mb-5">.NET Developer</h4>
                        <v-btn dark>
                            GET PROJECTS
