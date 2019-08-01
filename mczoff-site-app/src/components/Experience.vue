@@ -80,10 +80,10 @@
         data: () => ({
             experienceList: [
                 {
-                    title: 'Junior in development team',
+                    title: 'Middle in development team',
                     content: 'Automotive CCTV systems',
                     color: 'blue-grey',
-                    year: '2017 - 2019'
+                    year: '2017 - ...'
                 },
                 {
                     title: 'Junior in development team',

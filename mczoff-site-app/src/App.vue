@@ -1,6 +1,7 @@
 <template>
   <v-app>
     <v-navigation-drawer
+      v-scroll="onScroll"
       app
       v-model="drawer"
       flat
@@ -51,6 +52,37 @@
     <v-content>
       <Home/>
     </v-content>
+    <v-slide-y-transition>
+        <v-btn v-show="offsetTop > 500"
+           class="hidden-sm-and-down md-5 mr-4 elevation-21"
+           dark
+           fab
+           right
+           bottom
+           big
+           color="blue-grey darken-4"
+           fixed
+           @click="top"
+        >
+          <v-icon dark>keyboard_arrow_up</v-icon>
+        </v-btn>
+      </v-slide-y-transition>
+      <v-slide-y-transition>
+      <v-btn v-show="offsetTop > 500"
+          class="hidden-md-and-up md-5 mr-1 elevation-21"
+           transition="fade-transition"
+          dark
+          fab
+          right
+          bottom
+          small
+          color="blue-grey darken-4"
+          fixed
+          @click="top"
+    >
+        <v-icon dark>keyboard_arrow_up</v-icon>
+      </v-btn>
+    </v-slide-y-transition>
     <v-footer
             height="auto"
             color="blue-grey darken-4"
@@ -83,6 +115,7 @@ export default {
   },
   data:  () => ({
     drawer: false,
+    offsetTop: 0,
     headerLinks: [
       { title: 'Projects', url: '/#projects' },
       { title: 'Experience', url: '/#experience' },
@@ -91,6 +124,18 @@ export default {
       { title: 'Interests', url: '/#interests' },
       { title: 'Contacts', url: '/#contacts' },
     ]
-  })
+  }),
+  methods:{
+    top () {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      });
+    },
+    onScroll (e) {
+      this.offsetTop = window.pageYOffset || document.documentElement.scrollTop
+    }
+  }
 }
 </script>
