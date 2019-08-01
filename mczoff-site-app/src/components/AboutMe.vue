@@ -1,6 +1,6 @@
 <template>
     <v-container fluid ma-0 pa-0 id="aboutme">
-        <v-layout>
+        <v-layout >
             <v-flex>
                 <v-parallax
                         dark
@@ -27,7 +27,7 @@
 
 <script>
     export default {
-        name: "AboutMe"
+        name: "AboutMe",
     }
 </script>
 

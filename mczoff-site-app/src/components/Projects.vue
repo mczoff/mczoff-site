@@ -18,7 +18,7 @@
                             <v-layout justify-space-around>
                                 <v-flex md8 xs10>
                                     <v-layout justify-space-around row wrap>
-                                        <v-flex md3 xs4 ma-4
+                                        <v-flex md3 xs10 sm5 ma-4
                                                 v-for="project in projects"
                                                 :key="project.name">
                                             <v-card
@@ -195,17 +195,17 @@
                     technologies: [
                         {
                             logo: require('../assets/tech/js.png'),
-                            url: 'https://www.microsoft.com/ru-ru/sql-server/sql-server-2019',
+                            url: 'https://www.javascript.com/',
                             tooltip: 'JavaScript'
                         },
                         {
                             logo: require('../assets/tech/nodejs.png'),
-                            url: 'https://www.microsoft.com/ru-ru/sql-server/sql-server-2019',
+                            url: 'https://nodejs.org/en/',
                             tooltip: 'NodeJS'
                         },
                         {
                             logo: require('../assets/tech/react.png'),
-                            url: 'https://www.microsoft.com/ru-ru/sql-server/sql-server-2019',
+                            url: 'https://en.reactjs.org/',
                             tooltip: 'ReactJS'
                         },
                         {

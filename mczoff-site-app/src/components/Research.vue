@@ -49,10 +49,10 @@
                                                 small
                                         >
                                             <template v-slot:opposite>
-                                            <span
-                                                    :class="`headline font-weight-bold ${research.color}--text`"
-                                                    v-text="research.year"
-                                            ></span>
+                                                <span
+                                                        :class="`headline font-weight-bold ${research.color}--text`"
+                                                        v-text="research.year"
+                                                ></span>
                                             </template>
                                             <div class="text-xs-left py-0">
                                                 <h2 :class="`headline font-weight-light mb-3 ${research.color}--text`">{{research.title}}</h2>
